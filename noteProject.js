@@ -98,10 +98,10 @@ function deleteNote(index) {
 
 //search functionality........
 
-let search = document.getElementById('searchTxt');
-search.addEventListener('input', function() {
+let searchText = document.getElementById('searchTxt');
+searchText.addEventListener('input', function() {
 
-    let inputVal = search.value;
+    let inputVal = searchText.value;
     // console.log('Input event fired', inputVal);
     let noteCards = document.getElementsByClassName('noteCard');
     Array.from(noteCards).forEach(function (element) {
