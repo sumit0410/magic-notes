@@ -5,7 +5,11 @@ let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener('click', function (e) {
     let addTxt = document.getElementById('addTxt');
     let notes = localStorage.getItem("notes");
-    if(notes == null) {
+    
+     if(addTxt.value.length == 0){
+        alert("write something to add it as a note!");
+    }
+    else if(notes == null) {
         notesObj = [];
     }
     else {
@@ -46,7 +50,7 @@ function showNotes() {
         notesElm.innerHTML = html;
     }
     else{
-        notesElm.innerHTML = `<h3 style="color:skyblue;">Your notes will appear here when you will add a Note:</h3>`
+        notesElm.innerHTML = `<h3 style="color:skyblue;">No notes have been added yet!</h3>`
        
     }
 
