@@ -50,7 +50,7 @@ function showNotes() {
         notesElm.innerHTML = html;
     }
     else {
-        notesElm.innerHTML = `<h3 style="color:skyblue;">No notes have been added yet!</h3>`
+        notesElm.innerHTML = `<h3 style="color:skyblue;">No Tasks have been added yet!</h3>`
 
     }
 
