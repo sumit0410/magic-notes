@@ -11,11 +11,11 @@
     <title>Notes App</title>
 </head>
 
-<body style="background-color: azure;">
+<body style="background-color: azure; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Magic Notes</a>
+            <a class="navbar-brand" href="#">ToDo App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,20 +37,20 @@
     </nav>
 
     <div class="container my-3" style="background-color:lemonchiffon; border: 2px solid rgb(197, 196, 196)">
-        <h1>Welcome To Magic Notes</h1>
+        <h1>Welcome to ToDo App</h1>
         <div class="card my-3">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body" style="background-color: antiquewhite;">
-                <h5 class="card-title">Add a Note:</h5>
+                <h5 class="card-title">Add a Task:</h5>
                 <div class="input-group">
-                    <textarea class="form-control" aria-label="With textarea" id="addTxt" placeholder="write something to add it as a note..."></textarea>
+                    <textarea class="form-control" aria-label="With textarea" id="addTxt" placeholder="write something to add it as a Task to complete..."></textarea>
                 </div>
-                <button class="btn btn-primary my-2" id="addBtn">Add Note</button>
-                <button class="btn btn-primary my-2 mx-2" id="deleteAllBtn">Delete all notes</button>
+                <button class="btn btn-primary my-2" id="addBtn">Add  Task</button>
+                <button class="btn btn-primary my-2 mx-2" id="deleteAllBtn">Delete all Tasks at Once</button>
             </div>
         </div>
         <hr>
-        <h1>Your Notes</h1>
+        <h1>Your Tasks</h1>
         <hr>
         <div id="notes" class="row container-fluid">
 
