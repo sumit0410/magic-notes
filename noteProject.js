@@ -36,7 +36,7 @@ function showNotes() {
     let html = "";
     notesObj.forEach(function (element, index) {
         html += `
-               <div class=" noteCard my-2 mx-2 card" style="width: 18rem; background-color: antiquewhite;">
+               <div class=" noteCard my-2 mx-2 card" style="width: 18rem; background-color: rgb(247, 247, 247);">
                        <div class="card-body">
                            <h5 class="card-title">Task ${index + 1}</h5>
                            <p class="card-text">${element}</p>
@@ -50,7 +50,7 @@ function showNotes() {
         notesElm.innerHTML = html;
     }
     else {
-        notesElm.innerHTML = `<h3 style="color:skyblue;">No Tasks have been added yet!</h3>`
+        notesElm.innerHTML = `<h3 style="color:skyblue;">No notes have been added yet!</h3>`
 
     }
 
